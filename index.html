@@ -34,20 +34,25 @@
     font-size: 16px;
     font-weight: 600 /* 800 */
   }
-  strongred {
+  .strongred {
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-    color: 'red' ;
-    font-size: 16px
+    color: red ;
+    font-size: 16px ;
+    font-weight: 600 /* 800 */
   }
-  sectionheading {
+  .sectionheading {
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
     font-size: 22px;
     font-weight: 600
   }
-  pageheading {
+  .pageheading {
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
     font-size: 38px;
     font-weight: 400
+  }
+  .papertitle {
+    font-size: 16px;
+    font-weight: 600;  /* using strong bold because Titillium is thin */
   }
   .ImageBorder
   {
@@ -85,7 +90,7 @@
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
   <p align="center">
     <!-- <font size="7">Jiahui(Jim) Yang</font><br> -->
-    <pageheading>Jiahui(Jim) Yang</pageheading><br>
+    <span class="pageheading">Jiahui(Jim) Yang</span><br>
     <!-- <b>email</b>:&nbsp
     <font id="email" style="display:inline;">
       <noscript><i>Please enable Javascript to view</i></noscript>
@@ -134,13 +139,13 @@
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
   <tr>
   <td style="padding:20px;width:100%;vertical-align:middle">
-    <sectionheading>News</sectionheading>
+    <span class="sectionheading">News</span>
    <p>
     [09/2025] I am applying for PhD for Fall 2026.
    <br>
-    [08/2025] DRP is accepted to CoRL 2025.
+    [08/2025] <a href="https://deep-reactive-policy.com">DRP</a> is accepted to CoRL 2025.
    <br>
-    [06/2025] Neural MP is accepted to IROS 2025.
+    [06/2025] <a href="https://mihdalal.github.io/neuralmotionplanner">Neural MP</a> is accepted to IROS 2025.
    <br>
     [09/2024] We <a href="https://www.linkedin.com/posts/carnegie-mellon-university_carnegie-mellon-university-welcomed-google-activity-7242316975455051776-ROwS?utm_source=share&utm_medium=member_desktop">demoed</a> Neural MP and Bidex to the CEO of Google, Sundar Pichai, while he was visiting CMU!
    <br>
@@ -157,7 +162,7 @@
 <hr/>
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-  <tr><td><sectionheading>&nbsp;&nbsp;Publications </sectionheading></td></tr>
+  <tr><td><span class="sectionheading">&nbsp;&nbsp;Publications </span></td></tr>
   <tr>
     <td style="padding-left:20px;padding-top:10px;padding-bottom:20px;width:100%;vertical-align:middle">(* denotes equal contribution)</td>
   </tr>
@@ -167,8 +172,8 @@
 <br/>
 
 <tr bgcolor="#ffffd0">
-  <td width="33%" valign="top" align="center"><a href="https://deep-reactive-policy.com"><img src="images/drp.gif"
-      alt="sym" width="90%" style="border-radius:15px"></a></td>
+  <td width="36%" valign="top" align="center"><a href="https://deep-reactive-policy.com"><img src="images/drp.gif"
+      alt="sym" width="100%" style="border-radius:15px"></a></td>
 <td width="100%" valign="top">
   <p>
     <a href="https://deep-reactive-policy.com">
@@ -182,7 +187,9 @@
     Kenneth Shaw,
     Deepak Pathak
     <br>
-    <em> Conference on Robot Learning (CoRL), </em> 2025 <font color="red"></font>
+    CoRL 2025
+    <br>
+    <span class="strongred">Best Paper Award at LeaPRiDE Workshop</span>
     <br>
     <a href="https://arxiv.org/abs/2509.06953">paper</a> |
     <a href="https://deep-reactive-policy.com">website</a> |
@@ -192,12 +199,12 @@
 </tr>
 
 <tr bgcolor="#ffffd0">
-    <td width="33%" valign="top" align="center"><a href="https://mihdalal.github.io/neuralmotionplanner"><img src="images/nmp.gif"
-        alt="sym" width="90%" style="border-radius:15px"></a></td>
+    <td width="36%" valign="top" align="center"><a href="https://mihdalal.github.io/neuralmotionplanner"><img src="images/nmp.gif"
+        alt="sym" width="100%" style="border-radius:15px"></a></td>
   <td width="100%" valign="top">
     <p>
       <a href="https://mihdalal.github.io/neuralmotionplanner">
-        <papertitle>Neural MP: A Generalist Neural Motion Planner</papertitle>
+        <span class="papertitle">Neural MP: A Generalist Neural Motion Planner</span>
       </a>
       <br>
       Murtaza Dalal*,
@@ -207,10 +214,9 @@
       Ruslan Salakhutdinov,
       Deepak Pathak
       <br>
-      <em> International Conference on Intelligent Robots and Systems (IROS), </em> 2025 <font color="red">(Oral)</font>
-      <font color="red">Best Paper Award Finalist</font>
+      IROS 2025
       <br>
-      <font color="red">Best Student Paper Award Finalist</font>
+      <span class="strongred">Best Student Paper Award Winner</span>
       <br>
       <a href="https://arxiv.org/abs/2409.05864">paper</a> |
       <a href="https://mihdalal.github.io/neuralmotionplanner/">website</a> |
@@ -220,13 +226,13 @@
 </tr>
 
 <tr bgcolor="#ffffd0">
-    <td width="33%" valign="top" align="center"><a href="https://bidex-teleop.github.io/">
-    <video autoplay loop muted src="https://bidex-teleop.github.io/resources/1/plate2.mp4" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+    <td width="36%" valign="top" align="center"><a href="https://bidex-teleop.github.io/">
+    <video autoplay loop muted src="https://bidex-teleop.github.io/resources/1/plate2.mp4" alt="sym" width="100%" style="padding-top:0px;padding-bottom:0px;border-radius:15px"></video>
     </a></td>
   <td width="100%" valign="top">
     <p>
       <a href="https://bidex-teleop.github.io/">
-        <papertitle>Bimanual Dexterity for Complex Tasks</papertitle>
+        <span class="papertitle">Bimanual Dexterity for Complex Tasks</span>
       </a>
       <br>
       Kenneth Shaw*,
@@ -238,7 +244,7 @@
       Russell Mendonca†,
       Deepak Pathak†
       <br>
-      <em> Conference on Robot Learning (CoRL), </em> 2024 <font color="red"></font>
+      CoRL 2024
       <br>
       <a href="https://openreview.net/pdf?id=55tYfHvanf">paper</a> |
       <a href="https://bidex-teleop.github.io/">website</a> |
@@ -250,12 +256,12 @@
 </tr>
 
 <tr>
-    <td width="33%" valign="top" align="center"><a href="https://ieeexplore.ieee.org/abstract/document/10160310"><img src="images/power_circuit.png"
-        alt="Bidex" width="90%" style="border-radius:15px"></a></td>
+    <td width="36%" valign="top" align="center"><a href="https://ieeexplore.ieee.org/abstract/document/10160310"><img src="images/power_circuit.png"
+        alt="Bidex" width="100%" style="border-radius:15px"></a></td>
   <td width="100%" valign="top">
     <p>
       <a href="https://ieeexplore.ieee.org/abstract/document/10160310">
-        <papertitle>A lightweight high-voltage boost circuit for soft-actuated micro-aerial-robots</papertitle>
+        <span class="papertitle">A lightweight high-voltage boost circuit for soft-actuated micro-aerial-robots</span>
       </a>
       <br>
       Zhijian Ren,
@@ -265,7 +271,7 @@
       Jeffrey Lang,
       Yufeng Chen
       <br>
-      <em> International Conference on Robotics and Automation (ICRA), </em> 2023 <font color="red"></font>
+      ICRA 2023
       <br>
       <a href="https://ieeexplore.ieee.org/abstract/document/10160310">paper</a>
     </p>
@@ -273,12 +279,12 @@
 </tr>
 
 <tr>
-    <td width="33%" valign="top" align="center"><a href="https://arxiv.org/abs/2304.00234"><img src="images/mmra.png"
-        alt="Bidex" width="90%" style="border-radius:15px"></a></td>
+    <td width="36%" valign="top" align="center"><a href="https://arxiv.org/abs/2304.00234"><img src="images/mmra.png"
+        alt="Bidex" width="100%" style="border-radius:15px"></a></td>
   <td width="100%" valign="top">
     <p>
       <a href="https://arxiv.org/abs/2304.00234">
-        <papertitle>Coordinated Defense Allocation in Reach-Avoid Scenarios with Efficient Online Optimization</papertitle>
+        <span class="papertitle">Coordinated Defense Allocation in Reach-Avoid Scenarios with Efficient Online Optimization</span>
       </a>
       <br>
       Junwei Liu,
@@ -288,7 +294,7 @@
       Haibo Lu,
       Wei Zhang
       <br>
-      <em> arXiv, </em> 2023 <font color="red"></font>
+      arXiv 2023
       <br>
       <a href="https://arxiv.org/abs/2304.00234">paper</a>
     </p>
@@ -296,18 +302,18 @@
 </tr>
 
 <tr>
-    <td width="33%" valign="top" align="center"><a href="https://patents.google.com/patent/CN113954111B/en"><img src="images/finger.png"
-        alt="Bidex" width="90%" style="border-radius:15px"></a></td>
+    <td width="36%" valign="top" align="center"><a href="https://patents.google.com/patent/CN113954111B/en"><img src="images/finger.png"
+        alt="Bidex" width="100%" style="border-radius:15px"></a></td>
   <td width="100%" valign="top">
     <p>
       <a href="https://patents.google.com/patent/CN113954111B/en">
-        <papertitle>Parallel connecting rod mode switching parallel clamp coupling self-adaptive robot finger device</papertitle>
+        <span class="papertitle">Parallel connecting rod mode switching parallel clamp coupling self-adaptive robot finger device</span>
       </a>
       <br>
       <strong>Jiahui Yang</strong>,
       Wenzeng Zhang
       <br>
-      <em> China Invention Patent CN113954111B, </em> 2022 <font color="red"></font>
+      China Invention Patent CN113954111B 2022
       <br>
       <a href="https://patents.google.com/patent/CN113954111B/en">paper</a> |
       <a href="patent_certificate.pdf">certificate</a>
