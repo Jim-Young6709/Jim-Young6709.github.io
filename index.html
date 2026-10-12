@@ -116,7 +116,7 @@
     <td width="68%" valign="top" align="justify">
 
         <p>
-            Hi! I'm Jim, an incoming PhD at the <a href="https://www.cs.washington.edu/">University of Washington</a> advised by <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>. I obtained my MS in the <a href="https://www.ri.cmu.edu/">Robotics Institute</a> at
+            Hi! I'm Jim, a first year PhD at the <a href="https://www.cs.washington.edu/">University of Washington</a> advised by <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>. I obtained my MS in the <a href="https://www.ri.cmu.edu/">Robotics Institute</a> at
             <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, advised by 
             <a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a> and <a href="https://www.cs.cmu.edu/~rsalakhu/">Ruslan Salakhutdinov</a>. 
         </p>
@@ -141,9 +141,14 @@
   <td style="padding:20px;width:100%;vertical-align:middle">
     <span class="sectionheading">News</span>
    <p>
-    [09/2025] I am applying for PhD for Fall 2026.
+    [09/2026] Starting my PhD at the Univeristy of Washington
    <br>
-    [08/2025] <a href="https://deep-reactive-policy.com">DRP</a> is accepted to CoRL 2025.
+    [09/2026] <a href="https://cowboy-manip.com">COWBOY</a> is accepted to CoRL 2026! See you in Austin! 🤠
+   <br>
+    [09/2025] <a href="https://mihdalal.github.io/neuralmotionplanner">Neural MP</a> won <b>Best Student Paper Award</b> at IROS 2025! 🏆
+   <br>
+    [08/2025] <a href="https://deep-reactive-policy.com">DRP</a> is accepted to CoRL 2025 and won <b>Best Paper Award</b> at the LeaPRiDE Workshop. 🏆
+   <span id="older-news" style="display:none">
    <br>
     [06/2025] <a href="https://mihdalal.github.io/neuralmotionplanner">Neural MP</a> is accepted to IROS 2025.
    <br>
@@ -154,7 +159,19 @@
     [06/2023] Completed my bachelor's degree at SUSTech! I was awarded as the Top 10 Summa Cum Laude Graduates in the college of engineering!
    <br>
     [06/2022] Finished a wonderful year at MIT as an exchange student.
+   </span>
+   <br>
+   <a href="#" id="news-toggle" onclick="toggleOlderNews(); return false;">Show more &#9662;</a>
    </p>
+   <script>
+    function toggleOlderNews() {
+      var older = document.getElementById('older-news');
+      var toggle = document.getElementById('news-toggle');
+      var hidden = older.style.display === 'none';
+      older.style.display = hidden ? 'inline' : 'none';
+      toggle.innerHTML = hidden ? 'Show less &#9652;' : 'Show more &#9662;';
+    }
+   </script>
   </td>
   </tr>
 </tbody></table>
@@ -164,12 +181,37 @@
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
   <tr><td><span class="sectionheading">&nbsp;&nbsp;Publications </span></td></tr>
   <tr>
-    <td style="padding-left:20px;padding-top:10px;padding-bottom:20px;width:100%;vertical-align:middle">(* denotes equal contribution)</td>
+    <td style="padding-left:20px;padding-top:10px;padding-bottom:20px;width:100%;vertical-align:middle">(* denotes equal contribution, &dagger; denotes equal advising)</td>
   </tr>
 </table>
 <!-- <p>* denotes equal contribution</p> -->
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
 <br/>
+
+<tr bgcolor="#ffffd0">
+  <td width="36%" valign="top" align="center"><a href="https://cowboy-manip.com">
+  <video autoplay loop muted playsinline poster="https://cowboy-manip.com/assets/videos/real_world_evals/scene_24/posters/scene_24_1.webp" src="https://cowboy-manip.com/assets/videos/real_world_evals/scene_24/scene_24_1.mp4" width="100%" style="border-radius:15px"></video>
+  </a></td>
+<td width="100%" valign="top">
+  <p>
+    <a href="https://cowboy-manip.com">
+      <span class="papertitle">COWBOY: A Scalable Sim-to-Real Framework for Learning Contextual Whole-Body Manipulation</span>
+    </a>
+    <br>
+    <strong>Jiahui Yang*</strong>,
+    Jason Jingzhou Liu*,
+    Ray Muxin Liu*,
+    Andrew E. Wang,
+    Kenneth Shaw,
+    Deepak Pathak<sup>&dagger;</sup>,
+    Ruslan Salakhutdinov<sup>&dagger;</sup>
+    <br>
+    CoRL 2026
+    <br>
+    <a href="https://cowboy-manip.com">website</a>
+  </p>
+</td>
+</tr>
 
 <tr bgcolor="#ffffd0">
   <td width="36%" valign="top" align="center"><a href="https://deep-reactive-policy.com"><img src="images/drp.gif"
@@ -189,7 +231,7 @@
     <br>
     CoRL 2025
     <br>
-    <span class="strongred">Best Paper Award at LeaPRiDE Workshop</span>
+    <span class="strongred">Best Paper Award at LeaPRiDE Workshop 🏆</span>
     <br>
     <a href="https://arxiv.org/abs/2509.06953">paper</a> |
     <a href="https://deep-reactive-policy.com">website</a> |
@@ -216,7 +258,7 @@
       <br>
       IROS 2025
       <br>
-      <span class="strongred">Best Student Paper Award Winner</span>
+      <span class="strongred">Best Student Paper Award Winner 🏆</span>
       <br>
       <a href="https://arxiv.org/abs/2409.05864">paper</a> |
       <a href="https://mihdalal.github.io/neuralmotionplanner/">website</a> |
